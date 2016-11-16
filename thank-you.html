@@ -1,0 +1,214 @@
+<html>
+	<head>
+		<title>Giảm béo</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+		<link rel="stylesheet" href="css/jquery.flipster.min.css" type="text/css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
+		<link rel="stylesheet" href="css/responsive.css" type="text/css"/>
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>   
+        <script type="text/javascript" src="js/jquery.flipster.min.js"></script>   
+
+        <script>
+        	$(window).scroll(function() {
+				if ($(this).scrollTop() > 1){  
+				    $('header').addClass("sticky");
+				  }
+				  else{
+				    $('header').removeClass("sticky");
+				  }
+			});
+        </script>
+        <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+		<!-- Add fancyBox - button helper (this is optional) -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-buttons.css?v=2.1.5" />
+		<script type="text/javascript" src="js/jquery.fancybox-buttons.js?v=2.1.5"></script>
+
+		<!-- Add fancyBox - thumbnail helper (this is optional) -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css?v=2.1.5" />
+		<script type="text/javascript" src="js/jquery.fancybox-thumbs.js?v=2.1.5"></script>
+
+		<!-- Add fancyBox - media helper (this is optional) -->
+		<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.0"></script>
+	    <script type="text/javascript">
+	    $(document).ready(function() {
+	    	$(".various").fancybox({
+	    		maxWidth	: 800,
+	    		maxHeight	: 600,
+	    		fitToView	: false,
+	    		width		: '80%',
+	    		height		: '80%',
+	    		autoSize	: false,
+	    		closeClick	: false,
+	    		openEffect	: 'none',
+	    		closeEffect	: 'none'
+	    	});
+	    });
+	    
+	    </script>
+	    
+	    <!-- bắt lỗi -->
+		<link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css"/>
+		<script src="js/jquery.validationEngine-vi.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		        jQuery(document).ready(function($){
+		            // binds form submission and fields to the validation engine
+		            $("#dktuvanmienphi").validationEngine(); //#formID là ID của thẻ <form> muốn check
+		        });
+		        function checkFunction(field, rules, i, options){
+		            if (field.val() != "HELLO") { //điều kiện check
+		                return options.allrules.validate2fields.alertText; //trả về giá trị
+		            }
+		    }
+		</script>
+		<!-- end bắt lỗi -->
+		<script src="js/jquery.sidr.js"></script>
+		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+		<script>
+			$(document).ready(function(){				
+				$(".nav-bt").click(function(){
+					$(".danhmuc").toggle();
+				});
+				$(".danhmuc a").click(function(){
+					$(".danhmuc").hide();
+				});							
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+			  $('#simple-menu').sidr();
+			});
+		</script>
+		<script type="text/javascript" async src="//e-vcdn.anthill.vn/delivery-ants/conversion.js"></script>
+		<script type="text/javascript">
+		   var ants_analytic = ants_analytic || []; 
+		   ants_analytic.push({ 
+		    conversionId : "54b46907", 
+		    label: "d000e1e4", 
+		    value: 0, 
+		    currency: "vnd" 
+		   })
+		</script>
+	</head>
+
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WCBKPG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WCBKPG');</script>
+<!-- End Google Tag Manager -->
+	<div id="container">
+		<header>
+			<div class="header">
+				<!-- menu respon -->
+				<div class="fixwidth">
+					<div class="logoimg-respon"><img src="img/logo.png" /></div>
+					<!-- <a class="nav-bt"><i class="fa fa-bars"></i>&nbsp;&nbsp;&nbsp;</a>	
+					<ul class="danhmuc">
+						<li><a href="#">Trang chủ</a></li>
+						<li><a href="#khachhang">Khách hàng</a></li>
+						<li><a href="#congnghe">Công nghệ</a></li>
+						<li><a href="#kienthuc">Kiến thức</a></li>
+						<li><a href="#thucuc">Thu Cúc</a></li>
+						<li><a href="#khuyenmai">Khuyến mãi</a></li>			            
+					</ul>  -->
+					<a id="simple-menu" href="#sidr"><i class="fa fa-bars"></i></a>
+					<div id="sidr">
+					  <!-- Your content -->
+					  <ul>
+					    <li><a href="http://hutmothammy.net/">Trang chủ</a></li>
+						<li><a href="http://hutmothammy.net/#khachhang">Khách hàng</a></li>
+						<li><a href="http://hutmothammy.net/#congnghe">Công nghệ</a></li>
+						<li><a href="http://hutmothammy.net/#kienthuc">Kiến thức</a></li>
+						<li><a href="http://hutmothammy.net/#thucuc">Thu Cúc</a></li>
+						<li><a href="http://hutmothammy.net/#khuyenmai">Khuyến mãi</a></li>
+						<!--li><img src="img/phone.png" />&nbsp;Hotline : <a href="tel:0964080999">0964 080 999</a></li-->
+					  </ul>
+					</div>
+				</div>
+				<!--end menu -->
+				<div class="logoimg"><img src="img/logo.png" /></div>
+				<div class="navtop">
+					<nav>
+						<ul>
+							<li><a href="http://hutmothammy.net">Trang chủ</a></li>
+							<li><a href="http://hutmothammy.net/#khachhang">Khách hàng</a></li>
+							<li><a href="http://hutmothammy.net/#congnghe">Công nghệ</a></li>
+							<li><a href="http://hutmothammy.net/#kienthuc">Kiến thức</a></li>
+							<li><a href="http://hutmothammy.net/#thucuc">Thu Cúc</a></li>
+							<li><a href="http://hutmothammy.net/#khuyenmai">Khuyến mãi</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="social-hotline">
+					<ul>
+						<li><a href=""><img src="img/fb.png" /></a></li>
+						<!--li><img src="img/phone.png" />&nbsp;Hotline : <a href="tel:0964080999">0964 080 999</a></li-->
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- end header -->
+		<div class="top-container" id="dangky">
+			<div class="content">
+				<div class="img320"><img src="img/320x360/hinh-anh-1.jpg" /></div>
+				<div class="img480"><img src="img/480/hinh-anh-1.jpg" /></div>
+				<div class="img768"><img src="img/768/hinh-anh-1.jpg" /></div>
+				<div class="img-cnt">
+					<div class="top-img1"><img src="img/hinh-anh.png" /></div>
+					<div class="top-img2"><img src="img/1000-anh-1.png" /></div>
+				</div>
+				<div class="thank-cnt">
+					<div>
+						<span>CẢM ƠN QUÝ KHÁCH ĐÃ ĐĂNG KÝ THÀNH CÔNG</span>
+Chúng tôi sẽ liên lạc lại với Quý khách trong thời gian sớm nhất.
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end top container -->	
+		<footer>
+			<div id="footer">
+				<div class="box-ft">
+					<div class="box1">
+						<img src="img/logo-ft.png" />
+					</div>
+					<div class="box2">
+						<div>Bệnh viện đa khoa quốc tế Thu Cúc</div>
+						<div><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Địa chỉ: Tầng 5, 286 Thụy Khuê, Tây Hồ, Hà Nội</div>
+						<!--div><i class="fa fa-phone"></i>&nbsp;&nbsp;Hotline : <a href="tel:0964080999">0964 080 999</a></div-->
+					</div>
+					<div class="box3">
+						<div>Bệnh viện đa khoa quốc tế Thu Cúc</div>
+						<div><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Địa chỉ: 55A - Đường 3/2 - Phường 11 - Quận 10 - TP.Hồ Chí Minh</div>
+						<!--div><i class="fa fa-phone"></i>&nbsp;&nbsp;Hotline : <a href="tel:0904434888">0904 434 888</a></div-->
+					</div>
+				</div>
+			</div>
+		</footer>	
+	</div>
+    
+ 
+<script type="text/javascript">
+    var query = window.location.search.substring(1);
+    var order_id = query.split("=")[1];
+
+    var a = document.createElement("img");
+    a.width = 1;
+    a.height = 1;
+    a.border = 0;
+    a.src = "https://cv.accesstrade.vn/cv.php?identifier=" + order_id + "&mcn=b73ce398c39f506af761d2277d853a92&result_id=101";
+    document.body.appendChild(a);
+</script>
+
+</body>
+</html>

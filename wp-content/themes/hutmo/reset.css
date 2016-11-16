@@ -1,0 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&subset=latin,vietnamese);
+
+@charset "utf-8";
+.aligncenter{margin:5px auto; display:block; max-width:100%;}
+.alignleft{ float:left; margin-right:10px; margin-top:5px; width:50%;}
+.alignright{ float:right; margin-left:10px; margin-top:5px; width:50%;}
+

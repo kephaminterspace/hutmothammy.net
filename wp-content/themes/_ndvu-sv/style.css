@@ -1,0 +1,404 @@
+/*
+Theme Name: Tham my
+Theme URI: thammy
+Author: Company
+Author URI: thammy
+Description: My code , and database optimize !!
+Version: 1.1
+License: Nothing
+License URI: Nothing
+Tags: Nothing
+
+*/
+@media screen and (max-width: 640px){
+	.wp-caption img{
+		width:100% !important;
+		height:100% !important;
+	}
+	.ctform{width:100% !important}
+	.ctform .tdform{width:100% !important}
+	.formdk{width:280px !important}
+	.formdk p{width:260px !important}
+	.colum02 iframe{width:100%}
+	.baochi img{margin-top:5px !important}
+	.searchhome,.emaillt{width:100% !important}
+	.searchthammy{float:left !important;}
+}
+@media screen and (max-width: 480px){
+	.hd_cel1 a img{
+		width:245px;
+	}
+	#news-container{height:245px !important}
+}
+.flexslider4 ul li img{width:100%; height:auto}
+.imgslide img{width:100%}	
+.wp-caption-text{
+	text-align:center;
+	margin-top:2px;
+	font-style:italic;
+}
+.wp_rp_content{
+	margin-top:15px;
+	width:100%;
+	text-align:center
+}
+.related_post_title{
+	color:#088d5a;
+	text-transform:uppercase;
+	font-size:18px;
+}
+.photo img{height:214px}
+.bc-second{width:20% !important}
+.colum02 ul{margin-left:20px}
+a{font-family:Tahoma, Geneva, sans-serif}
+#news-container{
+	min-height:163px;
+}
+#news-container ul li{list-style: none;}
+#news-container ul{
+	top:-10px;
+}
+.videobox img, .service_box_02 img {border:1px solid #242323}
+.bg1, .bg2{
+	width: auto;
+	display: block;
+	height: 36px;
+	line-height: 2.4;
+	color: #fff !important;
+	text-indent:10px;
+	margin-bottom: 0 !important;
+}
+.bg1{background: url(http://thammycongnghecao.vn/wp-content/uploads/2014/09/bg-heading.png) no-repeat;}
+.bg2{background: url(http://thammycongnghecao.vn/wp-content/uploads/2014/09/bg-heading-1.png) no-repeat;}
+.bg2 a{
+	color:#fff;
+}
+.danhgiakh{
+	border:1px solid #55ab0b;
+	border-top-left-radius: 0 !important;
+}
+.wpcf7 img{border:none !important}
+.box_ct2 img{width:100%}
+.slider { margin: 50px 0 10px!important;}
+#carousel, #carousel1 {margin-top:5px;}
+#carousel li, #carousel1 li {margin-right: 3px;}
+#carousel img, #carousel1 img {display: block; opacity: .7; cursor: pointer; width:100%;}
+#carousel img:hover, #carousel img:hover {opacity: 1;}
+#carousel .flex-active-slide img, #carousel1 .flex-active-slide img {opacity: 1; cursor: default;}
+#carousel img{height:auto}
+#slider img{width:100%}
+#carousel1 li p{text-align:center; color: #000; margin:0 5px; font-size:12px; font-weight:bold}
+#carousel1 .flex-direction-nav a{top:-30px !important}
+#carousel1 li{position:relative}
+#carousel1 li p{position:absolute; top:10px; display:none}
+#carousel1 li:hover p{display:block}
+#site-generator {
+	clear: both;
+	display: block;
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 17px;
+	padding: 0;
+	text-align: center;
+	margin-left: 10px;
+}
+#site-generator div{
+	text-align:left;
+}
+#site-generator a {	
+	color: #fff;
+}
+#site-generator a:hover{
+	text-decoration:underline;	
+}
+#site-generator .sep {
+	margin: 0 7px;
+}
+#site-generator .copyright, 
+#site-generator .powered {
+    display: inline;
+    width: 99%;
+}
+#site-generator .copyright { 
+	clear: both;
+	float: left;
+    text-align: center;
+	vertical-align: top;
+	font-size:13px;
+}
+.copyright1, .copyright2, .copyright3{;
+	float:left;
+	padding:10px 15px;
+	vertical-align:top;
+}
+.copyright1 p, .copyright2 p{
+	text-transform:uppercase;
+	color:#fff;
+	font-size:16px;
+}
+#site-generator .powered { 
+	margin-right: 3%;
+	float: right;
+    text-align: right;
+}
+.dky_bs{display:none}
+.contact{background:none !important}
+.boxtomtat{
+	background:#e4f2e7;
+	padding:10px 10px;
+	margin-bottom:20px;
+	border-radius:7px;
+	-moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+	position: relative;
+	border:1px dashed gray;	
+	font-weight:bold;
+	font-style:Italic;	
+}
+.noidungchinh{
+	background:#e5f2e8;
+	padding:10px 20px 20px;
+	border:1px dotted #cdd4cd;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	line-height:1.6;
+	margin-top:30px;
+	margin-bottom:10px;
+}
+.noidungchinh ul,.noidungchinh ol{
+	margin-left:30px;
+}
+.noidungchinh li{
+	margin:4px 0;
+}
+.addtitle1,.addtitle2,.addtitle3,.addtitle4,.addtitle5,.addtitle6,.addtitle7,.addtitle8,.addtitle9{
+	color:#fb5f2e !important;
+	font-size:13pt !important;
+	font-weight:bold !important;
+	text-transform:uppercase !important;
+	margin-bottom:20px !important;
+	margin-top:20px !important;
+}
+.addtitle1:before{
+	content:"1";
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #fff;
+	background: #fb5f2e;
+	border-radius: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 20pt;
+	line-height: 1.5;
+	float: left;
+	margin-top: -10px;
+	margin-right: 10px;
+}
+.addtitle2:before{
+	content:"2";
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #fff;
+	background: #fb5f2e;
+	border-radius: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 20pt;
+	line-height: 1.5;
+	float: left;
+	margin-top: -10px;
+	margin-right: 10px;
+}
+.addtitle3:before{
+	content:"3";
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #fff;
+	background: #fb5f2e;
+	border-radius: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 20pt;
+	line-height: 1.5;
+	float: left;
+	margin-top: -10px;
+	margin-right: 10px;
+}
+.addtitle4:before{
+	content:"4";
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #fff;
+	background: #fb5f2e;
+	border-radius: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 20pt;
+	line-height: 1.5;
+	float: left;
+	margin-top: -10px;
+	margin-right: 10px;
+}
+.addtitle5:before{
+	content:"5";
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #fff;
+	background: #fb5f2e;
+	border-radius: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 20pt;
+	line-height: 1.5;
+	float: left;
+	margin-top: -10px;
+	margin-right: 10px;
+}
+.addtitle6:before{
+	content:"6";
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #fff;
+	background: #fb5f2e;
+	border-radius: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 20pt;
+	line-height: 1.5;
+	float: left;
+	margin-top: -10px;
+	margin-right: 10px;
+}
+.addtitle7:before{
+	content:"7";
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #fff;
+	background: #fb5f2e;
+	border-radius: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 20pt;
+	line-height: 1.5;
+	float: left;
+	margin-top: -10px;
+	margin-right: 10px;
+}
+.addtitle8:before{
+	content:"8";
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #fff;
+	background: #fb5f2e;
+	border-radius: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 20pt;
+	line-height: 1.5;
+	float: left;
+	margin-top: -10px;
+	margin-right: 10px;
+}
+.addtitle9:before{
+	content:"9";
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #fff;
+	background: #fb5f2e;
+	border-radius: 30px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 20pt;
+	line-height: 1.5;
+	float: left;
+	margin-top: -10px;
+	margin-right: 10px;
+}
+.addtitleh2{
+	color:#008a5b;
+	font-size:18px;
+	font-weight:bold;
+}
+.bacsidanhgia {
+height: 38px;
+background: #00a651;
+color: white;
+text-transform: uppercase;
+font-size: 14px;
+font-weight: bold;
+margin-top: 40px;
+margin-bottom: 20px;
+line-height: 38px;
+text-align: center;
+}
+.khungbsdg {
+border: 2px dashed #3cbb7a;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+position: relative;
+padding: 10px;
+margin: 5px 0px 28px 0px;
+}
+.dktv{overflow:hidden; background:url(img/bgdk.png) no-repeat}
+.ctform{width:60%; float:left}
+.ctform .ctformlydo{text-transform:uppercase; color:#ee1c25; font-weight:bold; font-size:16px; margin-top:35px; text-align:center}
+.ctform ul{margin-bottom: 30px;}
+.ctform ul li{list-style:none; background:url(img/hoa-cuc.png) no-repeat; padding-left:40px; padding-top:6px; font-size: 14px; color:#646567;margin-bottom: 3px;}
+.ctform .tdform{background:#58585a; color:#fff100; text-align:center; text-transform:uppercase; font-size:16px; font-weight:bold;padding: 14px;width:110%}
+.formdk{width: 40%; float:right; background: url(img/bgform.png) no-repeat 0;margin-right:-9px;height:320px;}
+.formdk .titform{text-transform:uppercase; color:#fff; margin:9px auto; text-indent:5px}
+.formdk p{text-align:center; margin:0 0 3px 10px; overflow:hidden}
+.formdk input{width:80%; padding:6px; border-radius:5px !important}
+.formdk textarea{width:80%; padding:10px; border-radius:5px !important; margin-bottom:0}
+.formdk select{width:80%; padding:6px; border-radius:8px !important; color:#646567}
+.formdk .btndk input{background:url(img/submit-04.png) no-repeat; text-indent:-9999px; float:right; margin-right:5px;width:140px}
+.formdk .btndk input:hover{background:url(img/submit-03.png) no-repeat}
+.box_support .hotrotime{color:#088d5a; font-size:15px; border:1px dashed #088d5a; padding:20px 15px; border-radius:7px;margin-top:32px; background: #DDD;}
+.imgsp{margin: 0; margin-top: 30px;}
+.imgsp img{border: 1px dashed #088d5a; border-radius: 8px;}
+.searchthammy{border:1px solid #989494;padding:8px 10px;margin-top:10px;width: 290px;background: #fff url(img/search.png) right no-repeat; float:left; position:fixed;}
+.eemail_textbox{width:250px; float:left;margin-left:13% !important}
+.eemail_textbox input{width:100%; padding:8px 10px;margin-top:-5px; border:1px solid #00CED1 !important}
+.eemail_button{width:70px;; float:left !important}
+.eemail_button input{background: none repeat scroll 0 0 #00CED1;
+    border: 1px solid #00CED1 !important;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    height: 33px;
+    margin-top: -5px;
+    padding: 2px;
+    width: 100%;}
+.searchhome{width:30%; float:left;margin-left:40%;margin-top:-5px !important}
+.emaillt{ float: left !important;
+height: 45px;
+position: fixed;
+width: 30%}
+.noidungdv{padding:5px; display; overflow:hidden;}
+.noidungdv img{width:33%; float:left; margin-right:8px}
+.noidungdv span{display:block; float:left; width:63%}
+.site_footer {background: url('http://thammycongnghecao.vn/wp-content/uploads/2015/01/footer3-02.jpg') no-repeat;height: 280px}

@@ -1,0 +1,614 @@
+<html>
+	<head>
+		<title>Giảm béo</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+		<link rel="stylesheet" href="css/jquery.flipster.min.css" type="text/css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
+		<link rel="stylesheet" href="css/responsive.css" type="text/css"/>
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>   
+        <script type="text/javascript" src="js/jquery.flipster.min.js"></script>   
+
+        <script>
+        	$(window).scroll(function() {
+				if ($(this).scrollTop() > 1){  
+				    $('header').addClass("sticky");
+				  }
+				  else{
+				    $('header').removeClass("sticky");
+				  }
+			});
+        </script>
+        <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+		<!-- Add fancyBox - button helper (this is optional) -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-buttons.css?v=2.1.5" />
+		<script type="text/javascript" src="js/jquery.fancybox-buttons.js?v=2.1.5"></script>
+
+		<!-- Add fancyBox - thumbnail helper (this is optional) -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css?v=2.1.5" />
+		<script type="text/javascript" src="js/jquery.fancybox-thumbs.js?v=2.1.5"></script>
+
+		<!-- Add fancyBox - media helper (this is optional) -->
+		<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.0"></script>
+	    <script type="text/javascript">
+	    $(document).ready(function() {
+	    	$(".various").fancybox({
+	    		maxWidth	: 800,
+	    		maxHeight	: 600,
+	    		fitToView	: false,
+	    		width		: '80%',
+	    		height		: '80%',
+	    		autoSize	: false,
+	    		closeClick	: false,
+	    		openEffect	: 'none',
+	    		closeEffect	: 'none'
+	    	});
+	    });
+	    
+	    </script>
+	    <script language="javascript">
+	      function tab_gold_select(i)
+	      {
+	        document.getElementById("tab_1").className=" ";        
+	        document.getElementById("tab_2").className=" ";      
+	        document.getElementById("tab_3").className=" ";      
+	        document.getElementById("tab_4").className=" ";      
+	        document.getElementById("tab_5").className=" ";      
+	        document.getElementById("tab_6").className=" ";      
+	        document.getElementById("tab_7").className=" ";      
+	        document.getElementById("tab_8").className=" ";      
+	        document.getElementById("tab_9").className=" ";   
+	        document.getElementById("tab_"+i).className="gbox-act";
+	        if (document.getElementById("div_gold0"+i)==null)
+	        {
+	            return;
+	        }
+	        if (document.getElementById("div_gold01")!=null){
+	            document.getElementById("div_gold01").style.display="none";
+	        }
+	        if (document.getElementById("div_gold02")!=null){
+	            document.getElementById("div_gold02").style.display="none";
+	        }                  
+	        if (document.getElementById("div_gold03")!=null){
+	            document.getElementById("div_gold03").style.display="none";
+	        }                  
+	        if (document.getElementById("div_gold04")!=null){
+	            document.getElementById("div_gold04").style.display="none";
+	        }                  
+	        if (document.getElementById("div_gold05")!=null){
+	            document.getElementById("div_gold05").style.display="none";
+	        }        
+	        if (document.getElementById("div_gold06")!=null){
+	            document.getElementById("div_gold06").style.display="none";
+	        }                  
+	        if (document.getElementById("div_gold07")!=null){
+	            document.getElementById("div_gold07").style.display="none";
+	        }                  
+	        if (document.getElementById("div_gold08")!=null){
+	            document.getElementById("div_gold08").style.display="none";
+	        }                  
+	        if (document.getElementById("div_gold09")!=null){
+	            document.getElementById("div_gold09").style.display="none";
+	        }           
+	                  
+	        if (document.getElementById("div_gold0"+i)!=null){
+	            document.getElementById("div_gold0"+i).style.display="";
+	        }
+	      }
+	    </script>
+	    <!-- bắt lỗi -->
+		<link rel="stylesheet" href="css/validationEngine.jquery.css" type="text/css"/>
+		<script src="js/jquery.validationEngine-vi.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		        jQuery(document).ready(function($){
+		            // binds form submission and fields to the validation engine
+		            $("#dktuvanmienphi").validationEngine(); //#formID là ID của thẻ <form> muốn check
+		        });
+                jQuery(document).ready(function($){
+		            // binds form submission and fields to the validation engine
+		            $("#dktuvanmienphi-footer").validationEngine(); //#formID là ID của thẻ <form> muốn check
+		        });
+		        function checkFunction(field, rules, i, options){
+		            if (field.val() != "HELLO") { //điều kiện check
+		                return options.allrules.validate2fields.alertText; //trả về giá trị
+		            }
+		    }
+		</script>
+		<!-- end bắt lỗi -->
+		<script src="js/jquery.sidr.js"></script>
+		<link rel="stylesheet" href="css/jquery.sidr.dark.min.css">
+		<script>
+			$(document).ready(function(){				
+				$(".nav-bt").click(function(){
+					$(".danhmuc").toggle();
+				});
+				$(".danhmuc a").click(function(){
+					$(".danhmuc").hide();
+				});							
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+			  $('#simple-menu').sidr();
+			});
+		</script>
+
+
+		<script type="text/javascript">
+			// JavaScript Document
+			function validateForm() {
+			//Email phải được điền chính xác
+				var email=document.forms["myForm"]["email"].value;
+				var aCong=email.indexOf("@");
+				var dauCham = email.lastIndexOf(".");
+				if (email == "") {
+				alert("Email không được để trống");
+				return false;
+				}
+				else if ((aCong<1) || (dauCham<aCong+2) || (dauCham+2>email.length)) {
+				alert("Email bạn điền không chính xác");
+				return false;
+				}			
+			}
+			</script>
+
+</head>
+<body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WCBKPG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WCBKPG');</script>
+<!-- End Google Tag Manager -->
+	<div id="container">
+		<header>
+			<div class="header">
+				<!-- menu respon -->
+				<div class="fixwidth">
+					<div class="logoimg-respon"><img src="img/logo.png" /></div>
+					<!-- <a class="nav-bt"><i class="fa fa-bars"></i>&nbsp;&nbsp;&nbsp;</a>	
+					<ul class="danhmuc">
+						<li><a href="#">Trang chủ</a></li>
+						<li><a href="#khachhang">Khách hàng</a></li>
+						<li><a href="#congnghe">Công nghệ</a></li>
+						<li><a href="#kienthuc">Kiến thức</a></li>
+						<li><a href="#thucuc">Thu Cúc</a></li>
+						<li><a href="#khuyenmai">Khuyến mãi</a></li>			            
+					</ul>  -->
+					<a id="simple-menu" href="#sidr"><i class="fa fa-bars"></i></a>
+					<div id="sidr">
+					  <!-- Your content -->
+					  <ul>
+					    <li><a href="#">Trang chủ</a></li>
+						<li><a href="#khachhang">Khách hàng</a></li>
+						<li><a href="#congnghe">Công nghệ</a></li>
+						<li><a href="#kienthuc">Kiến thức</a></li>
+						<li><a href="#thucuc">Thu Cúc</a></li>
+						<li><a href="#khuyenmai">Khuyến mãi</a></li>
+						<!--li><img src="img/phone.png" />&nbsp;Hotline : <a href="tel:0964080999">0964 080 999</a></li-->
+					  </ul>
+					</div>
+				</div>
+				<!--end menu -->
+				<div class="logoimg"><img src="img/logo.png" /></div>
+				<div class="navtop">
+					<nav>
+						<ul>
+							<li><a href="#">Trang chủ</a></li>
+							<li><a href="#khachhang">Khách hàng</a></li>
+							<li><a href="#congnghe">Công nghệ</a></li>
+							<li><a href="#kienthuc">Kiến thức</a></li>
+							<li><a href="#thucuc">Thu Cúc</a></li>
+							<li><a href="#khuyenmai">Khuyến mãi</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="social-hotline">
+					<ul>
+						<li><a href=""><img src="img/fb.png" /></a></li>
+						<!--li><img src="img/phone.png" />&nbsp;Hotline : <a href="tel:0964080999">0964 080 999</a></li-->
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- end header -->
+		<div class="top-container" id="dangky">
+			<div class="content">
+				<div class="img320"><img src="img/320x360/hinh-anh-1.jpg" /></div>
+				<div class="img480"><img src="img/480/hinh-anh-1.jpg" /></div>
+				<div class="img768"><img src="img/768/hinh-anh-1.jpg" /></div>
+				<div class="img-cnt">
+					<div class="top-img1"><img src="img/hinh-anh.png" /></div>
+					<div class="top-img2"><img src="img/1000-anh-1.png" /></div>
+				</div>
+				<div class="register-cnt">
+					<div class="title-form">
+						<span>Đăng ký ngay</span>
+						<span>Để nhận ưu đãi <font color="#ff4200">15%</font></span>
+					</div>
+					<div class="box-form">
+						<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post" id="dktuvanmienphi" name="myForm" onsubmit="return validateForm()">
+			                <input type="text" placeholder="Họ tên" name="name" class="validate[required] text-input" /><br/>
+			                <input type="text" id="email" placeholder="Email"  name="email" class="validate[required,custom[email]" /><br/>
+			                <input name="custom_sodienthoai" placeholder="Số điện thoại" type="text" value="" class="validate[required,custom[phone]] validate[optional,maxSize[11]]" /><br/>
+			                <input type="hidden" name="campaign_token" value="pA0Gi" />
+			                <input type="hidden" name="thankyou_url" value="http://hutmothammy.net/thank-you.html"/>
+			                <input type="hidden" name="forward_data" value="" />
+			                <input type="submit" class="btn-share" value="Đăng ký" onclick="formSubmitClick()" />
+		                </form>
+		                <div class="bot-form">		                	
+			                <span>Bệnh viện đa khoa quốc tế Thu Cúc</span>
+			                <span>cam kết bảo mật thông tin khách hàng</span>
+		                </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end top container -->
+		<session>
+			<div id="khachhang">
+				<div class="wrap flip-wrap">
+		            <div class="tech-section-title">
+		                <span>Ý kiến khách hàng</span>
+		                <img src="img/cham-ykien.png" />
+						<span>(*) Lưu ý: Kết quả còn tùy thuộc vào cơ địa của mỗi người</span>
+		            </div>            		
+			        <div class="slider-flip">
+			        	<div id="coverflow">
+				            <ul class="flip-items" id="navlist">
+				                <li id="1">
+				                    <a id="tab_1" onClick="tab_gold_select(1);" href="javascript:;"><img src="img/kh/kh1.png" /></a>
+				                    <div class="flip-des">
+				                    	<span>DOANH NHÂN PHƯƠNG LIÊN</span>
+				                		<p>Chia sẻ cảm nhận: "Với cân nặng 65 kg của mình, vòng bụng sồ sề, đã nhiều lần tôi tìm cách giảm béo bằng nhịn ăn, tập luyện… trong thời gian dài nhưng đều không mang lại hiệu quả. Được bạn bè giới thiệu, tôi đã đến Thu Cúc để giảm béo. Trước khi thực hiện tôi khá lo lắng vì đây là lần đầu làm phẫu thuật, tuy nhiên sự nhiệt tình của bác sĩ và nhân viên khiến tôi yên tâm hơn hẳn. Sau khi hút mỡ, dù vòng eo không được như thời con gái nhưng đối với phụ nữ tầm tuổi này thì kết quả mang lại đã là một thành công lớn rồi. Dịch vụ tốt, môi trường an tâm là điều tôi hài lòng nhất ở Thu Cúc".</p> 
+				                    </div>		                    
+				                </li>
+				                <li id="2">
+				                    <a id="tab_2" onClick="tab_gold_select(2);" href="javascript:;"><img src="img/kh/kh2.png" /></a>
+				                    <div class="flip-des">
+						                <span>BẠN THÚY QUỲNH</span>
+						                <p>Thúy Quỳnh cho biết : "MC là công việc mình muốn theo đuổi thế nhưng từ sau khi sinh em bé thì khoảng 1 năm trở lại đây, vòng bụng của mình khá to và sồ sề. Với vòng eo “bánh mì” này, mình thực sự thiếu tự tin khi dẫn chương trình với những trang phục bó sát cơ thể. Biết đến công nghệ hút mỡ này qua một diễn đàn làm đẹp, quả thực trước khi đến đây mình cũng khá lo lắng và không kỳ vọng nhiều, chỉ mong giảm được 70% lượng mỡ thừa nhưng kết quả sau thực hiện khiến mình khá bất ngờ. Vòng eo 84 cm ngày nào giờ chỉ còn… 62 cm thôi, mọi thứ hơn cả mong đợi (cười)".</p>
+						            </div>
+				                </li>
+				                <li id="3">
+				                    <a id="tab_3" onClick="tab_gold_select(3);" href="javascript:;"><img src="img/kh/kh3.png" /></a>
+				                    <div class="flip-des">
+						                <span>CHỊ HOA</span>
+						                <p>Là kê toán trưởng nên mỗi ngày mình phải ngồi ở văn phòng có hôm đến cả 10-11 giờ đồng hồ, có khi hơn khi phải làm báo cáo cuối tháng. Thế nên bụng không khác gì bầu 7 tháng, quần áo mặc càng ngày càng chật, người thì ục ịch không thanh thoát tí nào. Công việc bận rộn chẳng có thời gian tập tành, ăn kiêng thì mệt không đủ sức làm việc, cực chẳng đã mình tìm đến công nghệ giảm béo hiện đại. Thực sự không thể tin nổi mình lại có thể lấy được vòng eo 62 cm như thời con gái.</p>
+						            </div>
+				                </li>
+				                <li id="4">
+				                    <a id="tab_4" onClick="tab_gold_select(4);" href="javascript:;"><img src="img/kh/kh4.png" /></a>
+				                    <div class="flip-des">
+						                <span>BẠN MINH TÂM</span>
+						                <p>Minh Tâm cho biết : "Ăn bí đao, yến mạch, cà chua... đủ hết, sao bạn mình nó giảm cân dễ ợt mà mình mãi không xong. Sau khi sinh xong bé thứ hai, cứ nghĩ cai sữa con xong sẽ gầy ai ngờ lại càng sồ sề. Chắc cũng đành chấp nhận thân hình ấy nếu như không biết đến hút mỡ tại Thu Cúc. Mình hút mỡ bụng và đùi, kết quả dù đống mỡ thừa không vứt hết được nhưng ít ra cũng khá eo ót và đùi nhỏ hơn nhiều rồi. Lúc đầu cũng sợ lắm ai dè bác sĩ làm nhẹ nhàng nên hồi phục rất nhanh".</p>
+						            </div>
+				                </li>  
+				                <li id="5">
+				                    <a id="tab_5"  class="gbox-act" onClick="tab_gold_select(5);" href="javascript:;"><img src="img/kh/kh5.png" /></a>
+				                    <div class="flip-des">
+						                <span>DIỄN VIÊN ĐÀM HẰNG</span>
+						                <p>Là người của công chúng, việc chăm chút ngoại hình là rất quan trọng. Thế nhưng sau khi sinh con, lượng mỡ thừa, da chùng trên cơ thể khiến tôi rất tự ti khi đứng trước đám đông. Đây chắc hẳn cũng là cảm giác của nhiều bà mẹ khác. Vùng bắp tay tôi khá to, khó diện được những bộ cánh ngắn tay hoặc sát nách, vì vậy tôi quyết định hút mỡ tại Thu Cúc. Trải nghiệm công nghệ hút mỡ hiện đại có khác, lượng mỡ thừa vùng cánh tay bỗng dưng… biến mất. Bác sĩ thực hiện nhẹ nhàng, tư vấn viên nhiệt tình, tôi rất tin tưởng dịch vụ tại đây. Sắp tới tôi sẽ đến Thu Cúc để tiếp tục hút mỡ giảm béo vùng bụng và đùi.</p>
+						            </div>				                    
+				                </li>    
+				                <li id="6">
+				                    <a id="tab_6" onClick="tab_gold_select(6);" href="javascript:;"><img src="img/kh/kh6.png" /></a>
+				                    <div class="flip-des">
+						                <span>CHỊ MAI PHƯƠNG</span>
+						                <p>Dân văn phòng hầu hết ai cũng có mỡ bụng. Ngồi nhiều, hoạt động ít, ngồi sai tư thế, dùng đồ ăn nhanh hay ăn ngủ tạm bợ ở bàn làm việc… khiến mỡ thừa ngày càng tích tụ nhiều ở vùng bụng. Bụng to nên nhiều khi thấy bạn bè mặc mấy chiếc váy đẹp lắm, muốn mua diện rồi lại tặc lưỡi cho qua vì nghĩ bụng thế này mặc vào mọi người lại cười cho. Lúc đầu nghe công nghệ hiện đại cũng chưa tin lắm nhưng trải nghiệm rồi mới thấy hiệu quả thật, giờ mình cực tự tin với vóc dạng hiện tại ( cười ).</p>
+						            </div>
+				                </li>
+				                <li id="7">
+				                    <a id="tab_7" onClick="tab_gold_select(7);" href="javascript:;"><img src="img/kh/kh7.png" /></a>
+				                    <div class="flip-des">
+						                <span>BẠN THÙY DƯƠNG</span>
+						                <p>Vui vẻ: "Nghĩ đến thời nặng gần 70 kg trong khi chiều cao chỉ ba mét bẻ đôi đúng là cơn ác mộng. Mọi người thường gọi mình là “ỉn dễ thương”, nghe nhiều cũng quen nhưng cũng buồn đấy. Lowcarb, tập gym, nhịn ăn, uống thuốc giảm cân… mình thử cả rồi, một thời gian vừa mệt vừa không thay đổi gì nên nản. Mỗi lần chụp ảnh là cứ phải hóp cả bụng nhưng một “rổ mỡ” thế này thì hóp đâu cho hết. Cuối cùng mình mới quyết định giảm béo bằng hút mỡ, hi vọng sau khi hút thì thon thả hơn chút. Không ngờ hiệu quả hơn mong đợi, dù thân hình chẳng phải là “thắt đáy lưng ong” như siêu mẫu nhưng cũng không bị gọi là “ỉn” nữa, chỉ mũm mĩm chút thôi (cười)"</p>
+						            </div>
+				                </li>
+				                <li id="8">
+				                    <a id="tab_8" onClick="tab_gold_select(8);" href="javascript:;"><img src="img/kh/kh8.png" /></a>
+				                    <div class="flip-des">
+						                <span>BẠN THÙY TRANG</span>
+						                <p>Thùy Trang cho biết : "Bận rộn chuyện chăm con, ít vận động, mỡ thừa dồn vào vùng bụng và cánh tay ngày càng tăng, tôi không còn biết phải mặc gì cho đẹp nữa, cũng ngại gần gũi với chồng. Thực hiện hút mỡ tại Thu Cúc xong vòng eo và cánh tay thon gọn hẳn. Không chỉ hài lòng với hiệu quả, tôi còn rất thích phong cách phục vụ, chăm sóc khách hàng tại đây, rất tận tình và chu đáo".</p>
+						            </div>
+				                </li>  
+				                <li id="9">
+				                    <a id="tab_9" onClick="tab_gold_select(9);" href="javascript:;"><img src="img/kh/kh9.png" /></a>
+				                    <div class="flip-des">
+						                <span>CHỊ YẾN</span>
+						                <p>Kể từ khi tập trung mở chuỗi cửa hàng ăn uống, tôi không còn có thời gian chăm chút cho ngoại hình của mình. Cách đây vài năm tôi gần như phát tướng khi tăng 20 kg so với thời kỳ trước mang bầu, và lượng mỡ thừa vẫn đeo bám mãi cho đến tuổi 40 khi công việc, gia đình đã ổn định. Vì vậy thời gian này tôi có tìm hiểu và quyết định nhờ đến sự trợ giúp của công nghệ cao để giảm béo. Thực hiện phẫu thuật khá nhanh, bác sĩ tận tình, lượng mỡ thừa cũng giảm đáng kể là điều tôi khá hài lòng tại Thu Cúc.</p>
+						            </div> 
+				                </li>  
+				            </ul>
+				            <!--
+				           	<div id="div_gold01" style="display:none" class="flip-desx">
+				                <span>DOANH NHÂN PHƯƠNG LIÊN</span>
+				                <p>Chia sẻ cảm nhận: "Với cân nặng 65 kg của mình, vòng bụng sồ sề, đã nhiều lần tôi tìm cách giảm béo bằng nhịn ăn, tập luyện… trong thời gian dài nhưng đều không mang lại hiệu quả. Được bạn bè giới thiệu, tôi đã đến Thu Cúc để giảm béo. Trước khi thực hiện tôi khá lo lắng vì đây là lần đầu làm phẫu thuật, tuy nhiên sự nhiệt tình của bác sĩ và nhân viên khiến tôi yên tâm hơn hẳn. Sau khi hút mỡ, dù vòng eo không được như thời con gái nhưng đối với phụ nữ tầm tuổi này thì kết quả mang lại đã là một thành công lớn rồi. Dịch vụ tốt, môi trường an tâm là điều tôi hài lòng nhất ở Thu Cúc".</p>
+				            </div>	
+				            <div id="div_gold02" style="display:none" class="flip-desx">
+				                <span>BẠN THÚY QUỲNH</span>
+				                <p>Thúy Quỳnh cho biết : "MC là công việc mình muốn theo đuổi thế nhưng từ sau khi sinh em bé thì khoảng 1 năm trở lại đây, vòng bụng của mình khá to và sồ sề. Với vòng eo “bánh mì” này, mình thực sự thiếu tự tin khi dẫn chương trình với những trang phục bó sát cơ thể. Biết đến công nghệ hút mỡ này qua một diễn đàn làm đẹp, quả thực trước khi đến đây mình cũng khá lo lắng và không kỳ vọng nhiều, chỉ mong giảm được 70% lượng mỡ thừa nhưng kết quả sau thực hiện khiến mình khá bất ngờ. Vòng eo 84 cm ngày nào giờ chỉ còn… 62 cm thôi, mọi thứ hơn cả mong đợi (cười)".</p>
+				            </div>
+				            <div id="div_gold03" style="display:none" class="flip-desx" style="display:none">
+				                <span>CHỊ HOA</span>
+				                <p>Là kê toán trưởng nên mỗi ngày mình phải ngồi ở văn phòng có hôm đến cả 10-11 giờ đồng hồ, có khi hơn khi phải làm báo cáo cuối tháng. Thế nên bụng không khác gì bầu 7 tháng, quần áo mặc càng ngày càng chật, người thì ục ịch không thanh thoát tí nào. Công việc bận rộn chẳng có thời gian tập tành, ăn kiêng thì mệt không đủ sức làm việc, cực chẳng đã mình tìm đến công nghệ giảm béo hiện đại. Thực sự không thể tin nổi mình lại có thể lấy được vòng eo 62 cm như thời con gái.</p>
+				            </div>
+				            <div id="div_gold04" style="display:none" class="flip-desx">
+				                <span>BẠN MINH TÂM</span>
+				                <p>Minh Tâm cho biết : "Ăn bí đao, yến mạch, cà chua... đủ hết, sao bạn mình nó giảm cân dễ ợt mà mình mãi không xong. Sau khi sinh xong bé thứ hai, cứ nghĩ cai sữa con xong sẽ gầy ai ngờ lại càng sồ sề. Chắc cũng đành chấp nhận thân hình ấy nếu như không biết đến hút mỡ tại Thu Cúc. Mình hút mỡ bụng và đùi, kết quả dù đống mỡ thừa không vứt hết được nhưng ít ra cũng khá eo ót và đùi nhỏ hơn nhiều rồi. Lúc đầu cũng sợ lắm ai dè bác sĩ làm nhẹ nhàng nên hồi phục rất nhanh".</p>
+				            </div>
+				            <div id="div_gold05" class="flip-desx">
+				                <span>DIỄN VIÊN ĐÀM HẰNG</span>
+				                <p>Là người của công chúng, việc chăm chút ngoại hình là rất quan trọng. Thế nhưng sau khi sinh con, lượng mỡ thừa, da chùng trên cơ thể khiến tôi rất tự ti khi đứng trước đám đông. Đây chắc hẳn cũng là cảm giác của nhiều bà mẹ khác. Vùng bắp tay tôi khá to, khó diện được những bộ cánh ngắn tay hoặc sát nách, vì vậy tôi quyết định hút mỡ tại Thu Cúc. Trải nghiệm công nghệ hút mỡ hiện đại có khác, lượng mỡ thừa vùng cánh tay bỗng dưng… biến mất. Bác sĩ thực hiện nhẹ nhàng, tư vấn viên nhiệt tình, tôi rất tin tưởng dịch vụ tại đây. Sắp tới tôi sẽ đến Thu Cúc để tiếp tục hút mỡ giảm béo vùng bụng và đùi.</p>
+				            </div>		
+				            <div id="div_gold06" style="display:none" class="flip-desx">
+				                <span>CHỊ MAI PHƯƠNG</span>
+				                <p>Dân văn phòng hầu hết ai cũng có mỡ bụng. Ngồi nhiều, hoạt động ít, ngồi sai tư thế, dùng đồ ăn nhanh hay ăn ngủ tạm bợ ở bàn làm việc… khiến mỡ thừa ngày càng tích tụ nhiều ở vùng bụng. Bụng to nên nhiều khi thấy bạn bè mặc mấy chiếc váy đẹp lắm, muốn mua diện rồi lại tặc lưỡi cho qua vì nghĩ bụng thế này mặc vào mọi người lại cười cho. Lúc đầu nghe công nghệ hiện đại cũng chưa tin lắm nhưng trải nghiệm rồi mới thấy hiệu quả thật, giờ mình cực tự tin với vóc dạng hiện tại ( cười ).</p>
+				            </div>
+				            <div id="div_gold07" style="display:none" class="flip-desx">
+				                <span>BẠN THÙY DƯƠNG</span>
+				                <p>Vui vẻ: "Nghĩ đến thời nặng gần 70 kg trong khi chiều cao chỉ ba mét bẻ đôi đúng là cơn ác mộng. Mọi người thường gọi mình là “ỉn dễ thương”, nghe nhiều cũng quen nhưng cũng buồn đấy. Lowcarb, tập gym, nhịn ăn, uống thuốc giảm cân… mình thử cả rồi, một thời gian vừa mệt vừa không thay đổi gì nên nản. Mỗi lần chụp ảnh là cứ phải hóp cả bụng nhưng một “rổ mỡ” thế này thì hóp đâu cho hết. Cuối cùng mình mới quyết định giảm béo bằng hút mỡ, hi vọng sau khi hút thì thon thả hơn chút. Không ngờ hiệu quả hơn mong đợi, dù thân hình chẳng phải là “thắt đáy lưng ong” như siêu mẫu nhưng cũng không bị gọi là “ỉn” nữa, chỉ mũm mĩm chút thôi (cười)"</p>
+				            </div>
+				            <div id="div_gold08" style="display:none" class="flip-desx">
+				                <span>BẠN THÙY TRANG</span>
+				                <p>Thùy Trang cho biết : "Bận rộn chuyện chăm con, ít vận động, mỡ thừa dồn vào vùng bụng và cánh tay ngày càng tăng, tôi không còn biết phải mặc gì cho đẹp nữa, cũng ngại gần gũi với chồng. Thực hiện hút mỡ tại Thu Cúc xong vòng eo và cánh tay thon gọn hẳn. Không chỉ hài lòng với hiệu quả, tôi còn rất thích phong cách phục vụ, chăm sóc khách hàng tại đây, rất tận tình và chu đáo".</p>
+				            </div>
+				            <div id="div_gold09" style="display:none" class="flip-desx">
+				                <span>CHỊ YẾN</span>
+				                <p>Kể từ khi tập trung mở chuỗi cửa hàng ăn uống, tôi không còn có thời gian chăm chút cho ngoại hình của mình. Cách đây vài năm tôi gần như phát tướng khi tăng 20 kg so với thời kỳ trước mang bầu, và lượng mỡ thừa vẫn đeo bám mãi cho đến tuổi 40 khi công việc, gia đình đã ổn định. Vì vậy thời gian này tôi có tìm hiểu và quyết định nhờ đến sự trợ giúp của công nghệ cao để giảm béo. Thực hiện phẫu thuật khá nhanh, bác sĩ tận tình, lượng mỡ thừa cũng giảm đáng kể là điều tôi khá hài lòng tại Thu Cúc.</p>
+				            </div>   
+				            -->         
+				        </div>
+	                	<div class="flip-prev">&nbsp;</div>
+	    				<div class="flip-next">&nbsp;</div>
+			        </div>
+
+				    <script type="text/javascript">
+				        var flip = $("#coverflow").flipster({
+				            style: 'flat',
+				            scrollwheel: false,
+				            spacing: -0.75
+				        });
+				        
+				        $('.flip-prev').click(function() {
+				            flip.flipster('prev');
+				        });
+
+				        $('.flip-next').click(function() {
+				            flip.flipster('next');
+				        });
+				    </script>
+            
+        		</div>
+			<div class="btn">
+				<a href="#dangky" class="btn-dk">Đăng ký ngay</a>
+			</div>
+			</div>
+		</session>
+		<!-- end khách hàng -->
+		<section>
+			<div id="congnghe">
+				<div class="wrap-cn">
+					<div class="content-cn">
+						<div class="col1">
+							<div class="img1-cn"><img src="img/cong-nghe-vaser.png" /></div>
+							<span>số 1 Hoa Kỳ được FDA chứng nhận về độ an toàn và hiệu quả</span>
+							<span>Độc quyền tại Thu Cúc</span>
+							<span>Vùng da căng mịn, săn chắc sau điều trị</span>
+							<span>Theo khuyến cáo của Bộ Y Tế</span>
+							<span>Hút mỡ phải được thực hiện tại Bệnh viện để đảm bảo an toàn tuyệt đối</span>
+							<div class="box-col">
+								<img src="img/vipo1.png" />
+								<img src="img/vipo2.png" />
+								<img src="img/vipo3.png" />
+								<img src="img/vipo4.png" />
+								<img src="img/vipo5.png" />
+							</div>
+						</div>
+						<div class="col2">
+							<img src="img/may-vipo.png" />
+						</div>
+					</div>
+				</div>
+				<div class="btn">
+					<a href="#dangky" class="btn-dk">Đăng ký ngay</a>
+				</div>
+			</div>
+		</section>
+		<!-- end công nghệ -->
+		<section>
+			<div id="kienthuc">
+				<div class="content-kt">
+					<div class="kt-title"><span>Kiến thức</span></div>
+					<div class="page_container">
+			            <div class="khungtext">
+			            	<div class="boxtext1">
+					            <div class="boxct">
+					                <div class="boxpic"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/giam-beo-khong-phau-thuat-khong-hieu-qua-nhu-ban-nghi.html"><img src="kien-thuc/img/anh-1.jpg" /></a></div>
+					                <div class="boxtitle"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/giam-beo-khong-phau-thuat-khong-hieu-qua-nhu-ban-nghi.html">Giảm béo không phẫu thuật không hiệu quả như bạn nghĩ</a></div>	                
+					            </div>
+					            <div class="boxct">
+					                <div class="boxpic"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/noi-lo-bung-mo-cua-phu-nu-sau-sinh.html"><img src="kien-thuc/images/noi-lo-mo-bung-phu-nu-sau-sinh-1.jpg" /></a></div>
+					                <div class="boxtitle"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/noi-lo-bung-mo-cua-phu-nu-sau-sinh.html">Nỗi lo bụng mỡ của phụ nữ sau sinh</a></div>	                
+					            </div>
+					            <div class="boxct">
+					                <div class="boxpic"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/mo-thua-vi-khach-khong-moi-cua-phai-dep.html"><img src="kien-thuc/images/mo-thua-vi-khach-khong-moi-2.jpg" /></a></div>
+					                <div class="boxtitle"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/mo-thua-vi-khach-khong-moi-cua-phai-dep.html">Mỡ thừa – “vị khách không mời” của phái đẹp</a></div>	                
+					            </div>
+					            <div class="boxct">
+					                <div class="boxpic"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/the-duc-giam-can.html"><img src="kien-thuc/images/the-duc-giam-can-1.jpg" /></a></div>
+					                <div class="boxtitle"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/the-duc-giam-can.html">Thể dục giảm cân có đem đến hiệu quả mong muốn?</a></div>	                
+					            </div>
+					            <div class="boxct">
+					                <div class="boxpic"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/an-kieng-giam-can-hai-nhieu-hon-loi.html"><img src="kien-thuc/images/an-kieng-hai-nhieu-hon-loi-1.jpg" /></a></div>
+					                <div class="boxtitle"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/an-kieng-giam-can-hai-nhieu-hon-loi.html">Ăn kiêng giảm cân: Hại nhiều hơn lợi</a></div>	                
+					            </div>
+					        </div>
+					        <div class="boxtext2">					        	
+					            <div class="boxct">
+					                <div class="boxpic"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/an-kieng.html"><img src="kien-thuc/images/an-kieng-1.jpg" /></a></div>
+					                <div class="boxtitle"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/an-kieng.html">Ăn kiêng và những nguy hiểm tiềm ẩn với phụ nữ trung niên</a></div>	                
+					            </div>
+					            <div class="boxct">
+					                <div class="boxpic"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/he-luy-viec-thua-can-voi-phu-nu-trung-nien.html"><img src="kien-thuc/images/he-luy-thua-can.jpg" /></a></div>
+					                <div class="boxtitle"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/he-luy-viec-thua-can-voi-phu-nu-trung-nien.html">Những hệ lụy của việc thừa cân với phụ nữ trung niên</a></div>	                
+					            </div>
+					            <div class="boxct">
+					                <div class="boxpic"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/phu-nu-trung-nien-co-can-giu-dang.html"><img src="kien-thuc/images/phu-nu-trung-nien-co-can-giu-dang.jpg" /></a></div>
+					                <div class="boxtitle"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/phu-nu-trung-nien-co-can-giu-dang.html">Phụ nữ trung niên có cần giữ dáng?</a></div>	                
+					            </div>
+					            <div class="boxct">
+					                <div class="boxpic"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/phuong-phap-loai-bo-mo-thua-toi-uu.html"><img src="kien-thuc/images/hut-mo-thua.jpg" /></a></div>
+					                <div class="boxtitle"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/phuong-phap-loai-bo-mo-thua-toi-uu.html">Phương pháp loại bỏ mỡ thừa tối ưu cho phụ nữ trung niên</a></div>	                
+					            </div>
+					            <div class="boxct">
+					                <div class="boxpic"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/su-dung-thuoc-giam-can.html"><img src="kien-thuc/images/thuoc-giam-can.jpg" /></a></div>
+					                <div class="boxtitle"><a class="various" data-fancybox-type="iframe" href="/kien-thuc/su-dung-thuoc-giam-can.html">Sử dụng thuốc giảm cân: con dao 2 lưỡi</a></div>	                
+					            </div>
+					        </div>
+			            </div>
+					</div>					
+						<div class="btn">
+							<a href="#dangky" class="btn-dk">Đăng ký ngay</a>
+						</div>
+				</div>
+			</div>
+		</section>
+		<!-- end kiến thức -->
+		<section>
+			<div id="thucuc">
+				<div class="content-th">
+					<div class="row-th">
+						<div class="img-title"><img src="img/title-th.png" /></div>
+						<div class="cont-col">
+							<div class="item">
+								<div class="img-col">
+									<img src="img/hop-tac.png" />
+								</div>
+								<div class="text-col">
+									<p>Hợp tác với tập đoàn	thẩm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mỹ lớn nhất Hàn Quốc&nbsp;&nbsp;&nbsp;&nbsp; V-Plastic</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img-col">
+									<img src="img/co-so-vat-chat.png" />
+								</div>								
+								<div class="text-col">
+									<p>Hệ thống cơ sở vật chất hiện đại bậc nhất</p>
+								</div>
+							</div>
+							<div class="item">
+								<div class="img-col">									
+									<img src="img/doi-ngu-bs.png" />
+								</div>
+								<div class="text-col">
+									<p>Đội ngũ bác sĩ Việt Nam và nước ngoài chuyên môn giỏi</p>
+								</div>								
+							</div>
+							<div class="item">
+								<div class="img-col">									
+									<img src="img/bv.png" />
+								</div>
+								<div class="text-col">
+									<p>Phẫu thuật thẩm mỹ cần phải được thực hiện tại Bệnh viện theo quy định an toàn của Bộ Y Tế</p>
+								</div>								
+							</div>
+						</div>
+						<div class="img-th">
+							<img src="img/hinh-anh-th.png" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end thu cúc -->
+		<section>
+			<div id="khuyenmai">
+				<div class="content-km">
+					<div class="row-km">
+						<div class="img-km">
+							<img src="img/khuyenmai-1.png" />
+						</div>
+						<div class="btn">
+							<a href="#dangky" class="btn-dk">Đăng ký ngay</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="khuyenmai-mb">				
+				<div class="img-km">
+					<img src="img/480/khuyen-mai.jpg" />
+				</div>			
+				<div class="img-km768">
+					<img src="img/768/khuyen-mai.jpg" />
+				</div>
+				<div class="content-km">
+					<div class="row-km">
+						<div class="register-cnt">
+							<div class="title-form">
+								<span>Đăng ký ngay</span>
+								<span>Để nhận ưu đãi <font color="#ff4200">15%</font></span>
+							</div>
+							<div class="box-form" id="dangky">
+								<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post" id="dktuvanmienphi-footer" name="myForm">
+					                <input type="text" placeholder="Họ tên" name="name" class="validate[required] text-input" /><br/>
+					                <input type="text" placeholder="Email"  name="email" class="validate[required,custom[email]]" /><br/>
+					                <input name="custom_sodienthoai" placeholder="Số điện thoại" type="text" value="" class="validate[required,custom[phone]]" /><br/>
+					                <input type="hidden" name="campaign_token" value="pA0Gi" />
+					                <input type="hidden" name="thankyou_url" value="/"/>
+					                <input type="hidden" name="forward_data" value="" />
+					                <input type="submit" class="btn-share" value="Đăng ký" />
+				                </form>
+				                <div class="bot-form">		                	
+					                <span>Bệnh viện đa khoa quốc tế Thu Cúc</span>
+					                <span>cam kết bảo mật thông tin khách hàng</span>
+				                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end khuyenmai -->	
+		<footer>
+			<div id="footer">
+				<div class="box-ft">
+					<div class="box1">
+						<img src="img/logo-ft.png" />
+					</div>
+					<div class="box2">
+						<div>Bệnh viện đa khoa quốc tế Thu Cúc</div>
+						<div><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Địa chỉ: Tầng 5, 286 Thụy Khuê, Tây Hồ, Hà Nội</div>
+						<!--div><i class="fa fa-phone"></i>&nbsp;&nbsp;Hotline : <a href="tel:0964080999">0964 080 999</a></div-->
+					</div>
+					<div class="box3">
+						<div>Bệnh viện đa khoa quốc tế Thu Cúc</div>
+						<div><i class="fa fa-map-marker"></i>&nbsp;&nbsp;&nbsp;Địa chỉ: 55A - Đường 3/2 - Phường 11 - Quận 10 - TP.Hồ Chí Minh</div>
+						<!--div><i class="fa fa-phone"></i>&nbsp;&nbsp;Hotline : <a href="tel:0904434888">0904 434 888</a></div-->
+					</div>
+				</div>
+			</div>
+		</footer>	
+	</div>
+<!--
+<script type='text/javascript'>window._sbzq||function(e){e._sbzq=[];var t=e._sbzq;t.push(["_setAccount",41782]);var n=e.location.protocol=="https:"?"https:":"http:";var r=document.createElement("script");r.type="text/javascript";r.async=true;r.src=n+"//static.subiz.com/public/js/loader.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)}(window);</script>
+-->
+
+<script type="text/javascript">
+    function formSubmitClick() {
+        var emailText = document.getElementById("email").value;
+        document.getElementsByName("thankyou_url")[0].value = "http://hutmothammy.net/thank-you.html?order_id=" + emailText;
+        WriteCookie();
+    }
+</script>
+
+</body>
+</html>

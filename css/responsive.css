@@ -1,0 +1,230 @@
+::-moz-selection{background:none repeat scroll 0 0 #0d9788;color:#fff}
+::selection{background:none repeat scroll 0 0 #0d9788;color:#fff}
+
+.img320,.img480,#khuyenmai-mb,.img768{display: none}
+    .img-km768{display: none;}
+
+@media screen and (min-width: 320px) and (max-width: 439px) {
+    .logoimg,.navtop,.social-hotline{display: none;}
+    .header{width: 100%;}
+    .fixwidth{width: 100%;display: block;}
+    .logoimg-respon img {width: 100%;}
+    #simple-menu {display: block;top: 35px;left: 10px;z-index: 99;}
+    .sticky{z-index: 999;}
+    .sidr ul li:last-child{text-transform: uppercase;color: #53af3e;border-bottom: none;}
+    .sidr ul li:last-child a{color: #53af3e;padding:0px;}
+    .content{width: 320px !important;}
+    .img320{display: block;}
+    .img-cnt,.register-cnt{display: none;}
+    #khachhang{display: none;}
+    .wrap-cn{width: 320px;}
+    #congnghe{background: url('../img/480/bg-congnghe.jpg') no-repeat center top;padding-bottom: 0px;width: 320px;margin: 0 auto;}
+    .col1 {width: 320px;display: inline-block;text-align: center;margin-top: 0px;}
+    .img1-cn img {width: 80%;padding-top: 20px;}
+    .col2{display: none;}
+    #congnghe .btn{display: none;}
+    .content-cn{margin-bottom: 0}
+    .col1 span:nth-child(3){margin-bottom: 10px;}
+    .box-col {margin-top: 30px;padding: 0px 5px;text-align: left;}
+    .box-col img {padding: 0px 5px 10px 0px;}
+    #kienthuc {background: #ededed;width: 320px;margin: 0 auto;}
+    .content-kt,.page_container{width: 320px;}
+    .content-kt .btn,.boxtext2{display: none;}
+    .boxct{margin-right: 0px;margin-left: 45px;}
+    .boxtext1 .boxct:last-child{display: none;}
+    #thucuc{width: 320px;margin:0 auto;background: #c9edff;}
+    .content-th{width: 320px;}
+    .img-th{display: none;}
+    .img-title img{width: 90%}
+    .cont-col{width: 320px;margin-bottom: 45px;}
+    .cont-col .item{width: auto;margin-left: 15px;height: auto;}
+    #khuyenmai{display: none;}
+    #khuyenmai-mb{display: block;width: 320px;margin:0 auto;}
+    #khuyenmai-mb .content-km .row-km .register-cnt{display: block;margin-left: 0px;width: 320px;margin-top:0;}
+    #khuyenmai-mb .content-km{width: 320px;background: url('../img/480/bg-kmmb.jpg') no-repeat bottom;padding-bottom: 35px;display: inline-block;}
+    .img-km img {width: 100%;}
+    #footer{width: 320px;}
+    .box1{display: none;}
+    .box2 {width: 320px;float: left;padding: 15px 0px 15px 15px;border-right: none;}
+    .box3 {float: left;padding: 15px 0px 15px 15px;width: 320px;}
+    .title-form{background: url('../img/320x360/form-title.png') no-repeat;padding: 30px 0px 80px;}
+    .box-form form input[type="text"],.box-form form input[type="submit"]{width: 285px;}
+    .box-form {background: url('../img/320x360/bg-form.png') no-repeat;margin-top: -60px;padding-top: 75px;}
+    .img-km768{display: none;}
+    #khachhang{display: none;}
+    .box-col img:nth-child(4) {margin-left: 50px;}
+}
+
+@media screen and (min-width: 360px) and (max-width: 639px){
+    .content{width: 320px;box-shadow: 1px 1px #dadada}
+    .top-container{background: none;}
+    .img320 img{width: 100%;}
+}
+
+@media screen and (min-width: 480px) and (max-width: 670px) {
+    .logoimg,.navtop,.social-hotline{display: none;}
+    .header{width: 100%;}
+    .fixwidth{width: 100%;display: block;}
+    .logoimg-respon img {width: 100%;}
+    #simple-menu {display: block;top: 35px;left: 10px;z-index: 99;}
+    .sticky{z-index: 999;}
+    .sidr ul li:last-child{text-transform: uppercase;color: #53af3e;border-bottom: none;}
+    .sidr ul li:last-child a{color: #53af3e;padding:0px;}
+    .content{width: 450px !important;}
+    .img320{display: none;}
+    .img480{display: block;}
+    .img480 img{width: 100%;}
+    .img-cnt,.register-cnt{display: none;}
+    .wrap-cn{width: 450px;}
+    #congnghe{background: url('../img/480/bg-congnghe.jpg') no-repeat center top;padding-bottom: 0px}
+    .col1 {width: 450px;display: inline-block;text-align: center;margin-top: 0px;}
+    .img1-cn img {width: 80%;padding-top: 20px;}
+    .col2{display: none;}
+    #congnghe .btn{display: none;}
+    .content-cn{margin-bottom: 0}
+    .col1 span:nth-child(3){margin-bottom: 10px;}
+    .box-col {margin-top: 40px;padding: 0px 60px;text-align: left;margin-left: 10px;}
+    .box-col img {padding: 0px 10px 10px 0px;}
+    .box-col img:nth-child(4) {margin-left: 55px;}
+    #kienthuc {background: #ededed;width: 450px;margin: 0 auto;}
+    .content-kt,.page_container{width: 450px;}
+    .content-kt .btn,.boxtext2{display: none;}
+    .boxct{width: 210px;margin-right: 0px;margin-left: 10px;}
+    .boxtext1 .boxct:last-child{display: none;}
+    #thucuc{width: 450px;margin:0 auto;background: #c9edff;}
+    .content-th{width: 450px;}
+    .img-th{display: none;}
+    .img-title img{width: 90%}
+    .cont-col{width: 450px;margin-bottom: 45px;}
+    .cont-col .item{width: 45%;margin-left: 15px;height: 300px;}
+    #khuyenmai{display: none;}
+    #khuyenmai-mb{display: block;width: 450px;margin:0 auto;}
+    #khuyenmai-mb .content-km .row-km .register-cnt {display: block;margin-left: 20px;background: url('../img/480/bg-kmmb.jpg') no-repeat bottom;margin-top: 0;margin-right: 35px;}
+    #khuyenmai-mb .content-km{width: 450px;background: url('../img/480/bg-kmmb.jpg') no-repeat bottom;padding-bottom: 35px;display: inline-block;}
+    #footer{width: 450px;}
+    .box1{display: none;}
+    .box2 {width: 380px;float: left;padding: 15px 0px 15px 15px;border-right: none;}
+    .box3 {float: left;padding: 15px 0px 15px 15px;}
+    .img-km768{display: none;}
+    .boxtitle a{font-size: 15px;}
+    #khachhang{width: 450px;margin:0 auto;}
+    .flip-wrap{width: 450px;}
+    .flipster__item.flipster__item--future.flipster__item--future-2{transform: scale(.25);}
+    .flipster__item.flipster__item--past.flipster__item--past-2{transform: scale(.25);}
+    .flipster__item.flipster__item--past.flipster__item--past-1{transform: scale(.5);margin-left: 130px !important;margin-right: -360px !important;}
+    .flipster__item.flipster__item--future.flipster__item--future-1{transform: scale(.5);margin-left: -120px !important;}
+    .flipster__item.flipster__item--current{transform: scale(.7);}
+    .flipster__item--current .flip-des{width: 520px;left: -100px;}
+    .flip-prev,.flip-next{display: none;}    
+    #khachhang .btn{width: 450px;}
+    .tech-section-title{padding-top:25px;padding-bottom:30px;}
+    .flipster{height: 500px;}
+    .flipster__item--current .flip-des p{font-size: 20px;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 800px) {
+    .navtop,.logoimg-respon{display: none;}
+    .social-hotline,.logoimg{margin-left: 50px;}
+    .header{width: 100%;}
+    .fixwidth{width: 100%;display: block;}    
+    #simple-menu {display: block;top: 35px;left: 10px;z-index: 99;}
+    .sticky{z-index: 999;}
+    .sidr ul li:last-child{text-transform: uppercase;color: #53af3e;border-bottom: none;}
+    .sidr ul li:last-child a{color: #53af3e;padding:0px;}
+    .content{width: 700px;}
+    .img320,.img480{display: none;}
+    .img768{display: block;text-align: center;}
+    .img-cnt,.register-cnt{display: none;}
+    .top-container{background: none;}
+    .col2{display: none;}
+    .wrap-cn{width: 700px;}
+    #congnghe {background: url('../img/768/bg-congnghe.jpg') no-repeat center top;padding-bottom: 50px;}
+   #kienthuc {background: #ededed;width: 700px;margin: 0 auto;}
+    .content-kt,.page_container,.content-kt .btn{width: 700px;}
+    .boxct{width: 215px;margin-right: 0px;margin-left: 15px;}
+    .boxtext2 .boxct:last-child{display: none;}
+    #thucuc{width: 700px;margin:0 auto;background: #c9edff;}
+    .content-th,.cont-col{width: 700px;}
+    .img-th img{width: 100%;}
+    .cont-col .item{width: 40%;margin-bottom:20px;}
+    #khuyenmai{width: 700px;margin:0 auto;}
+    .content-km{width: 700px;}
+    #khuyenmai{display: none;}
+    #khuyenmai-mb{display: block;width: 700px;margin:0 auto;background: url('../img/768/bg-kmmb.jpg') no-repeat top;}
+    .img-km{display: none;}
+    .img-km768{display: block;}
+    #khuyenmai-mb .content-km .row-km .register-cnt{display: block;margin: 0 145px;}
+    #khuyenmai-mb .content-km{width: 700px;background: url('../img/768/bg-kmmb.jpg') no-repeat top;padding-bottom: 35px;display: inline-block;}
+    #footer{width: 700px;}
+    .box1{display: none;}
+    .box2 {border-right: none;}
+    #congnghe .btn{width: 700px;}
+    .boxtitle a{font-size: 15px;}
+    #khachhang{width: 700px;margin:0 auto;}
+    .flip-wrap{width: 700px;}
+    .flipster__item.flipster__item--future.flipster__item--future-2{transform: scale(.45);}
+    .flipster__item.flipster__item--past.flipster__item--past-2{transform: scale(.45);}
+    .flipster__item.flipster__item--past.flipster__item--past-1{transform: scale(.65);margin-left: 35px !important;margin-right: -285px !important;}
+    .flipster__item.flipster__item--future.flipster__item--future-1{transform: scale(.65);margin-left: -40px !important;}
+    .flipster__item.flipster__item--current{transform: scale(.85);}
+    .flip-des{width: 600px}
+    .flip-prev {left: 0;right: 60px;margin: 0 auto;top:55%;}
+    .flip-next {left: 60px;right: 0px;margin: 0 auto;top:55%;}
+    #khachhang .btn{width: 700px;}
+    .flipster__item--current .flip-des {width: 700px;bottom: -125px;left: -175px;}
+.col1{margin-left:50px;}
+}
+@media screen and (min-width:1024px) and (max-width: 1366px) {
+.top-img1 {
+    margin-left: -15px;
+    margin-top: -3px;
+}
+.top-img1 img {
+    width: 100%;
+}
+.top-img2 {
+    display: inline-block;
+    /* text-align: center; */
+    margin-top: -90px;
+    margin-left: 280px;
+}
+.top-img2 img {
+    width: 100%;
+}
+.register-cnt {
+    width: 360px;
+    float: right;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+}
+@media screen and (min-width:1400px) and (max-width: 1600px) {
+.img-cnt {
+    width: 740px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -20px;
+}
+.top-img1 {
+    margin-left:-100px;
+    margin-top: -3px;
+}
+.top-img1 img {
+    width: 100%;
+}
+.top-img2 {
+    display: inline-block;
+    /* text-align: center; */
+    margin-top: -90px;
+    margin-left: 220px;
+}
+.top-img2 img {
+    width: 100%;
+}
+.register-cnt {
+    width: 360px;
+    float: right;
+    margin-top: 40px;
+    margin-left: 80px;
+}
+}
