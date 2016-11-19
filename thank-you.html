@@ -200,14 +200,28 @@ Chúng tôi sẽ liên lạc lại với Quý khách trong thời gian sớm nh�
  
 <script type="text/javascript">
     var query = window.location.search.substring(1);
-    var order_id = query.split("=")[1];
+//    var order_id = query.split("=")[1];
+//
+//    var a = document.createElement("img");
+//    a.width = 1;
+//    a.height = 1;
+//    a.border = 0;
+//    a.src = "https://cv.accesstrade.vn/cv.php?identifier=" + order_id + "&mcn=b73ce398c39f506af761d2277d853a92&result_id=101";
+//    document.body.appendChild(a);
 
-    var a = document.createElement("img");
-    a.width = 1;
-    a.height = 1;
-    a.border = 0;
-    a.src = "https://cv.accesstrade.vn/cv.php?identifier=" + order_id + "&mcn=b73ce398c39f506af761d2277d853a92&result_id=101";
-    document.body.appendChild(a);
+	$(document).ready(function(){
+		var form = $(this);
+		$.ajax({
+			type: 'GET',
+			url: 'controller.php?'+decodeURIComponent(query.split("=")[1]),
+			success: function(result) {
+				console.log(result);
+			},error: function(XMLHttpRequest, textStatus, errorThrown) {
+				console.log("Status: " + textStatus);
+				console.log("Error: " + errorThrown);
+			}
+		});
+	});
 </script>
 
 </body>

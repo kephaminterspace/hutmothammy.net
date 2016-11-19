@@ -236,9 +236,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</div>
 					<div class="box-form">
 						<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post" id="dktuvanmienphi" name="myForm" onsubmit="return validateForm()">
-			                <input type="text" placeholder="Họ tên" name="name" class="validate[required] text-input" /><br/>
+			                <input type="text" placeholder="Họ tên" id="name" name="name" class="validate[required] text-input" /><br/>
 			                <input type="text" id="email" placeholder="Email"  name="email" class="validate[required,custom[email]" /><br/>
-			                <input name="custom_sodienthoai" placeholder="Số điện thoại" type="text" value="" class="validate[required,custom[phone]] validate[optional,maxSize[11]]" /><br/>
+			                <input name="custom_sodienthoai" placeholder="Số điện thoại" type="text" value="" id="custom_sodienthoai" class="validate[required,custom[phone]] validate[optional,maxSize[11]]" /><br/>
 			                <input type="hidden" name="campaign_token" value="pA0Gi" />
 			                <input type="hidden" name="thankyou_url" value="http://hutmothammy.net/thank-you.html"/>
 			                <input type="hidden" name="forward_data" value="" />
@@ -530,54 +530,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</div>
 		</section>
 		<!-- end thu cúc -->
-		<section>
-			<div id="khuyenmai">
-				<div class="content-km">
-					<div class="row-km">
-						<div class="img-km">
-							<img src="img/khuyenmai-1.png" />
-						</div>
-						<div class="btn">
-							<a href="#dangky" class="btn-dk">Đăng ký ngay</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="khuyenmai-mb">				
-				<div class="img-km">
-					<img src="img/480/khuyen-mai.jpg" />
-				</div>			
-				<div class="img-km768">
-					<img src="img/768/khuyen-mai.jpg" />
-				</div>
-				<div class="content-km">
-					<div class="row-km">
-						<div class="register-cnt">
-							<div class="title-form">
-								<span>Đăng ký ngay</span>
-								<span>Để nhận ưu đãi <font color="#ff4200">15%</font></span>
-							</div>
-							<div class="box-form" id="dangky">
-								<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post" id="dktuvanmienphi-footer" name="myForm">
-					                <input type="text" placeholder="Họ tên" name="name" class="validate[required] text-input" /><br/>
-					                <input type="text" placeholder="Email"  name="email" class="validate[required,custom[email]]" /><br/>
-					                <input name="custom_sodienthoai" placeholder="Số điện thoại" type="text" value="" class="validate[required,custom[phone]]" /><br/>
-					                <input type="hidden" name="campaign_token" value="pA0Gi" />
-					                <input type="hidden" name="thankyou_url" value="/"/>
-					                <input type="hidden" name="forward_data" value="" />
-					                <input type="submit" class="btn-share" value="Đăng ký" />
-				                </form>
-				                <div class="bot-form">		                	
-					                <span>Bệnh viện đa khoa quốc tế Thu Cúc</span>
-					                <span>cam kết bảo mật thông tin khách hàng</span>
-				                </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end khuyenmai -->	
+
 		<footer>
 			<div id="footer">
 				<div class="box-ft">
@@ -598,16 +551,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</div>
 		</footer>	
 	</div>
-<!--
-<script type='text/javascript'>window._sbzq||function(e){e._sbzq=[];var t=e._sbzq;t.push(["_setAccount",41782]);var n=e.location.protocol=="https:"?"https:":"http:";var r=document.createElement("script");r.type="text/javascript";r.async=true;r.src=n+"//static.subiz.com/public/js/loader.js";var i=document.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)}(window);</script>
--->
+
+
+<script src="//cdn.accesstrade.vn/js/tracking.js" ></script>
+<script type="text/javascript">
+	AT.track();
+	function getCookie(cname) {
+		var name = cname + "=";
+		var ca = document.cookie.split(';');
+		for(var i = 0; i <ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length,c.length);
+			}
+		}
+		return "";
+	}
+</script>
 
 <script type="text/javascript">
-    function formSubmitClick() {
-        var emailText = document.getElementById("email").value;
-        document.getElementsByName("thankyou_url")[0].value = "http://hutmothammy.net/thank-you.html?order_id=" + emailText;
-        WriteCookie();
-    }
+	function formSubmitClick() {
+		var d = new Date();
+		var timestamp = d.getTime();
+		var params = 'name=' + document.getElementById("name").value;
+		params = params + '&email=' + timestamp + '_' + document.getElementById("email").value;
+		params = params + '&phone=' + document.getElementById("custom_sodienthoai").value;
+		params = params + '&aff_source='+getCookie("_aff_network");
+		params = params + '&aff_sid=' + getCookie("_aff_sid");
+		params = params + '&identifier=' + timestamp + '_' + document.getElementById("email").value;
+		document.getElementsByName("thankyou_url")[0].value = "http://hutmothammy.net/thank-you.html?form=" + encodeURIComponent(params);
+		//document.getElementsByName("thankyou_url")[0].value = "http://localhost:8080/hutmothammy.net/thank-you.html?form=" + encodeURIComponent(params);
+	}
 </script>
 
 </body>
